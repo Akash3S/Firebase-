@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "414800048929",
+    "project_id": "akashflutter-54cb7",
+    "storage_bucket": "akashflutter-54cb7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:414800048929:android:44837eab3a3647dcdc0460",
+        "android_client_info": {
+          "package_name": "com.example.akashflutter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDoJuh65DWx5ycNvN_Zp8bMfqzmG8UNQg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
