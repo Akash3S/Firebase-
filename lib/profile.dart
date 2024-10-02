@@ -1,6 +1,5 @@
 import 'package:akashflutter/signup.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Profile extends StatefulWidget{
@@ -10,10 +9,10 @@ class Profile extends StatefulWidget{
 
 class _ProfileState extends State<Profile> {
 
-  var emailText = TextEditingController();
-  var passwordText = TextEditingController();
+  TextEditingController email = TextEditingController();
+  TextEditingController password = TextEditingController();
   signIn()async{
-    await FirebaseAuth.instance.signInWithEmailAndPassword(email: emailText.text, password: passwordText.text);
+    await FirebaseAuth.instance.signInWithEmailAndPassword(email: email.text, password: password.text);
   }
 
 
@@ -38,7 +37,7 @@ class _ProfileState extends State<Profile> {
          Padding(
            padding: const EdgeInsets.all(15),
            child: TextField(
-             controller: emailText,
+             controller: email,
              style: TextStyle(fontSize: 18,color: Colors.black),
              decoration: InputDecoration(
                  prefixIcon: Icon(Icons.mail),
@@ -55,7 +54,7 @@ class _ProfileState extends State<Profile> {
          Padding(
            padding: const EdgeInsets.all(15),
            child: TextField(
-             controller: passwordText,
+             controller: password,
              style: TextStyle(fontSize: 18,color: Colors.black),
              decoration: InputDecoration(
                  prefixIcon: Icon(Icons.password),
