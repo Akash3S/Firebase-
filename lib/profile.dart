@@ -1,6 +1,9 @@
+import 'package:akashflutter/forget.dart';
 import 'package:akashflutter/signup.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 
 class Profile extends StatefulWidget{
   @override
@@ -68,6 +71,12 @@ class _ProfileState extends State<Profile> {
 
            ),
          ),
+
+
+           TextButton(onPressed:(()=>Get.to(Forget())),
+            child: Text("Forget password" ,style: TextStyle(fontSize: 14,fontWeight: FontWeight.bold,color: Colors.blue),) ),
+
+
          Padding(
            padding: const EdgeInsets.symmetric(horizontal: 15),
            child: Row(
@@ -75,9 +84,8 @@ class _ProfileState extends State<Profile> {
              children: [
 
                Text("Don't have an account?",style: TextStyle(fontSize:14, color: Colors.grey ),),
-               TextButton(onPressed:() {
-                 Navigator.push(context, MaterialPageRoute(builder: (context)=>Signup()));
-               }, child: Text("sign up" ,style: TextStyle(fontSize: 14,fontWeight: FontWeight.bold,color: Colors.blue),) )
+               TextButton(onPressed:(()=>Get.to(Signup())),
+                child: Text("sign up" ,style: TextStyle(fontSize: 14,fontWeight: FontWeight.bold,color: Colors.blue),) )
              ],
            ),
          ),
