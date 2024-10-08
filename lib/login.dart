@@ -17,12 +17,13 @@ class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title:Text ("login"),),
+
+      appBar: AppBar(title: Text('login'),),
       body: Center(
         child: Text ('${user!.email}'),
       ),
         floatingActionButton: FloatingActionButton
-          (onPressed:(()=>signout),
+          (onPressed:(()=>signout()),
           child: Icon(Icons.login_rounded),),
     );
   }
