@@ -19,7 +19,7 @@ class _ForgetState extends State<Forget> {
   @override
   Widget build(BuildContext context) {
   return Scaffold(
-    appBar: AppBar(title: Text("forget"),),
+    appBar: AppBar(title: Text("forget screen"),),
 
 body: Column(
     children: [
