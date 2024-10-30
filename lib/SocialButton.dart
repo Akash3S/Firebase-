@@ -7,8 +7,6 @@ class SocialButton extends StatelessWidget {
   final IconData icon;
   final String text;
   final Color? color;
-  final double width;
-  final double height;
 
   const SocialButton({
     super.key,
@@ -16,15 +14,14 @@ class SocialButton extends StatelessWidget {
     required this.icon,
     required this.text,
     this.color,
-    this.width = 220,
-    this.height = 50,
   });
 
   @override
   Widget build(BuildContext context) {
     return Container(
-        width: width,
-        height: height,
+       // width: width,
+       // height: height,
+      padding: EdgeInsets.all(16),
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(20),
