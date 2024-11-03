@@ -70,7 +70,7 @@ class _ProfileState extends State<Profile> {
           password: password.text,
         );
         // Navigate to home on success
-        Get.offAllNamed('/home');
+        Get.offAllNamed('/crm');
       } catch (e) {
         Get.snackbar(
           'Error',

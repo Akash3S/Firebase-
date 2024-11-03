@@ -1,3 +1,4 @@
+import 'package:akashflutter/Screens/dashboard/crm.dart';
 import 'package:akashflutter/login.dart';
 import 'package:akashflutter/profile.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -12,7 +13,7 @@ class Wraper extends StatelessWidget{
 body: StreamBuilder(stream: FirebaseAuth.instance.authStateChanges(),
     builder: (context,snapshot){
       if(snapshot.hasData){
-        return Login();
+        return Crm();
       } else{
         return Profile();
       }
